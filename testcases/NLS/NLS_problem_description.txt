@@ -1,0 +1,5 @@
+Problem Description-NLS:
+
+Design a Non-Linear Sign (NLS) gate with a single signal channel and two additional ancilla channels, featuring three inputs and three outputs. The gate should employ built-in couplers to create a quantum logic operation and a phase shift of ϕ is applied to the signal channel to ensure a non-deterministic nonlinear sign change on a specific mode.
+
+Parameters: ϕ: 180°

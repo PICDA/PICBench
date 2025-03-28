@@ -1,0 +1,5 @@
+Problem Description-Crossbar_8x8:
+
+Design a NxN optical switching network based on the crossbar architecture. The switch should enable wide-sense non-blocking switching between N input ports and N output ports using NxN 2x2 optical switches in a full matrix configuration characteristic of the crossbar topology. Use a built-in components called OSU to represent the 2x2 optical switching unit. 
+
+ Parameters:N=8

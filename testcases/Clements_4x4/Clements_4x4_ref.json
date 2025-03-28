@@ -1,0 +1,38 @@
+{
+  "netlist": {
+    "instances": {
+      "mzi1": "mzi_ps",
+      "mzi2": "mzi_ps",
+      "mzi3": "mzi_ps",
+      "mzi4": "mzi_ps",
+      "mzi5": "mzi_ps",
+      "mzi6": "mzi_ps"
+    },
+      "connections": {
+        "mzi1,O1": "mzi4,I1",
+        "mzi1,O2": "mzi3,I1",
+        "mzi2,O1": "mzi3,I2",
+        "mzi2,O2": "mzi5,I2",
+
+        "mzi3,O1": "mzi4,I2",
+        "mzi3,O2": "mzi5,I1",
+
+        "mzi4,O2": "mzi6,I1",
+        "mzi5,O1": "mzi6,I2"
+      },
+      "ports": {
+        "I1": "mzi1,I1",
+        "I2": "mzi1,I2",
+        "I3": "mzi2,I1",
+        "I4": "mzi2,I2",
+
+        "O1": "mzi4,O1",
+        "O2": "mzi6,O1",
+        "O3": "mzi6,O2",
+        "O4": "mzi5,O2"
+      }
+    },
+    "models": {
+      "mzi_ps": "mzi_ps"
+    }
+  }

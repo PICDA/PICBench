@@ -1,0 +1,34 @@
+{
+  "netlist":
+{
+  "instances": {
+    "ring1": {"component": "mrr", "settings": {"cwl": 1.543}},
+    "ring2": {"component": "mrr", "settings": {"cwl": 1.55}},
+    "ring3": {"component": "mrr", "settings": {"cwl": 1.554}},
+    "ring4": {"component": "mrr", "settings": {"cwl": 1.556}},
+    "waveguide1": "waveguide",
+    "waveguide2": "waveguide",
+    "waveguide3": "waveguide"
+  },
+  "connections": {
+    "ring1,O2": "waveguide1,I1",
+    "waveguide1,O1": "ring2,O3",
+    "ring2,O2": "waveguide2,I1",
+    "waveguide2,O1": "ring3,O3",
+    "ring3,O2": "waveguide3,I1",
+    "waveguide3,O1": "ring4,O3"
+},
+  "ports": {
+    "I1": "ring1,I1",
+    "I2": "ring2,I1",
+    "I3": "ring3,I1",
+    "I4": "ring4,I1",
+    "O1": "ring4,O2"
+
+  }
+},
+  "models": {
+    "mrr": "mrr",
+    "waveguide": "straight"
+  }
+}

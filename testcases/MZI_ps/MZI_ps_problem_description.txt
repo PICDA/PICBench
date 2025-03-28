@@ -1,0 +1,7 @@
+Problem Description-MZI_ps:
+
+Create a Mach-Zehnder interferometer (MZI) with a single input and output, featuring a path length difference of ΔL. A phase shifters with a length of L should be applied to the top arm to modulate the phase of the optical signal. Use the built-in multimode interferometer (MMI) component for splitting and combining the optical signals, and the built-in phase shifters to achieve the desired phase modulation. 
+
+Parameters:
+ΔL=10 microns 
+L=10 microns

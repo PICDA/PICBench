@@ -1,0 +1,123 @@
+{
+  "netlist": {
+    "instances": {
+      "mzi1": "mzi_ps",
+      "mzi2": "mzi_ps",
+      "mzi3": "mzi_ps",
+      "mzi4": "mzi_ps",
+      "mzi5": "mzi_ps",
+      "mzi6": "mzi_ps",
+      "mzi7": "mzi_ps",
+
+      "mzi8": "mzi_ps",
+      "mzi9": "mzi_ps",
+      "mzi10": "mzi_ps",
+      "mzi11": "mzi_ps",
+      "mzi12": "mzi_ps",
+      "mzi13": "mzi_ps",
+
+      "mzi14": "mzi_ps",
+      "mzi15": "mzi_ps",
+      "mzi16": "mzi_ps",
+      "mzi17": "mzi_ps",
+      "mzi18": "mzi_ps",
+
+      "mzi19": "mzi_ps",
+      "mzi20": "mzi_ps",
+      "mzi21": "mzi_ps",
+      "mzi22": "mzi_ps",
+
+      "mzi23": "mzi_ps",
+      "mzi24": "mzi_ps",
+      "mzi25": "mzi_ps",
+
+      "mzi26": "mzi_ps",
+      "mzi27": "mzi_ps",
+
+      "mzi28": "mzi_ps"
+    },
+      "connections": {
+        "mzi1,O2": "mzi2,I1",
+        "mzi2,O2": "mzi3,I1",
+        "mzi3,O2": "mzi4,I1",
+        "mzi4,O2": "mzi5,I1",
+        "mzi5,O2": "mzi6,I1",
+        "mzi6,O2": "mzi7,I1",
+
+        "mzi1,O1": "mzi8,I1",
+        "mzi2,O1": "mzi8,I2",
+        "mzi3,O1": "mzi9,I2",
+        "mzi4,O1": "mzi10,I2",
+        "mzi5,O1": "mzi11,I2",
+        "mzi6,O1": "mzi12,I2",
+        "mzi7,O1": "mzi13,I2",
+
+        "mzi8,O2": "mzi9,I1",
+        "mzi9,O2": "mzi10,I1",
+        "mzi10,O2": "mzi11,I1",
+        "mzi11,O2": "mzi12,I1",
+        "mzi12,O2": "mzi13,I1",
+
+        "mzi8,O1": "mzi14,I1",
+        "mzi9,O1": "mzi14,I2",
+        "mzi10,O1": "mzi15,I2",
+        "mzi11,O1": "mzi16,I2",
+        "mzi12,O1": "mzi17,I2",
+        "mzi13,O1": "mzi18,I2",
+
+        "mzi14,O2": "mzi15,I1",
+        "mzi15,O2": "mzi16,I1",
+        "mzi16,O2": "mzi17,I1",
+        "mzi17,O2": "mzi18,I1",
+
+        "mzi14,O1": "mzi19,I1",
+        "mzi15,O1": "mzi19,I2",
+        "mzi16,O1": "mzi20,I2",
+        "mzi17,O1": "mzi21,I2",
+        "mzi18,O1": "mzi22,I2",
+
+        "mzi19,O2": "mzi20,I1",
+        "mzi20,O2": "mzi21,I1",
+        "mzi21,O2": "mzi22,I1",
+
+        "mzi19,O1": "mzi23,I1",
+        "mzi20,O1": "mzi23,I2",
+        "mzi21,O1": "mzi24,I2",
+        "mzi22,O1": "mzi25,I2",
+
+        "mzi23,O2": "mzi24,I1",
+        "mzi24,O2": "mzi25,I1",
+
+        "mzi23,O1": "mzi26,I1",
+        "mzi24,O1": "mzi26,I2",
+        "mzi25,O1": "mzi27,I2",
+
+        "mzi26,O2": "mzi27,I1",
+
+        "mzi26,O1": "mzi28,I1",
+        "mzi27,O2": "mzi28,I1"
+      },
+      "ports": {
+        "I1": "mzi1,I1",
+        "I2": "mzi1,I2",
+        "I3": "mzi2,I2",
+        "I4": "mzi3,I2",
+        "I5": "mzi4,I2",
+        "I6": "mzi5,I2",
+        "I7": "mzi6,I2",
+        "I8": "mzi7,I2",
+
+        "O1": "mzi7,O2",
+        "O2": "mzi13,O2",
+        "O3": "mzi18,O2",
+        "O4": "mzi22,O2",
+        "O5": "mzi25,O2",
+        "O6": "mzi27,O2",
+        "O7": "mzi28,O1",
+        "O8": "mzi28,O2"
+      }
+    },
+    "models": {
+      "mzi_ps": "mzi_ps"
+    }
+  }

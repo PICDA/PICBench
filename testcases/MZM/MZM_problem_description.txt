@@ -1,0 +1,5 @@
+Problem Description-MZM:
+
+Create a Mach-Zehnder Modulator (MZM) which have a single optical input and a single optical output. The phase shifters with a length of L should be applied to the two arms to modulate the phase of the optical signal. Use the built-in multimode interferometer (MMI) component for splitting and combining the optical signals, and the built-in phase shifters to achieve the desired phase modulation.
+
+Parameters:L=10 microns

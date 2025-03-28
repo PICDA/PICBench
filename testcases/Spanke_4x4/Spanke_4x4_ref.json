@@ -1,0 +1,90 @@
+{
+  "netlist": {
+    "instances": {
+      "mmi11l": "mmi",
+      "mmi12l": "mmi",
+      "mmi13l": "mmi",
+
+      "mmi21l": "mmi",
+      "mmi22l": "mmi",
+      "mmi23l": "mmi",
+
+      "mmi31l": "mmi",
+      "mmi32l": "mmi",
+      "mmi33l": "mmi",
+
+      "mmi41l": "mmi",
+      "mmi42l": "mmi",
+      "mmi43l": "mmi",
+
+      "mmi11r": "mmi",
+      "mmi12r": "mmi",
+      "mmi13r": "mmi",
+
+      "mmi21r": "mmi",
+      "mmi22r": "mmi",
+      "mmi23r": "mmi",
+
+      "mmi31r": "mmi",
+      "mmi32r": "mmi",
+      "mmi33r": "mmi",
+
+      "mmi41r": "mmi",
+      "mmi42r": "mmi",
+      "mmi43r": "mmi"
+    },
+    "connections": {
+      "mmi11l,O1": "mmi12l,I1",
+      "mmi11l,O2": "mmi13l,I1",
+      "mmi21l,O1": "mmi22l,I1",
+      "mmi21l,O2": "mmi23l,I1",
+      "mmi31l,O1": "mmi32l,I1",
+      "mmi31l,O2": "mmi33l,I1",
+      "mmi41l,O1": "mmi42l,I1",
+      "mmi41l,O2": "mmi43l,I1",
+
+      "mmi12r,I1": "mmi11r,O1",
+      "mmi13r,I1": "mmi11r,O2",
+      "mmi22r,I1": "mmi21r,O1",
+      "mmi23r,I1": "mmi21r,O2",
+      "mmi32r,I1": "mmi31r,O1",
+      "mmi33r,I1": "mmi31r,O2",
+      "mmi42r,I1": "mmi41r,O1",
+      "mmi43r,I1": "mmi41r,O2",
+
+      "mmi12l,O1": "mmi12r,O1",
+      "mmi12l,O2": "mmi22r,O1",
+      "mmi22l,O1": "mmi12r,O2",
+      "mmi22l,O2": "mmi22r,O2",
+
+      "mmi13l,O1": "mmi32r,O1",
+      "mmi13l,O2": "mmi42r,O1",
+      "mmi23l,O1": "mmi32r,O2",
+      "mmi23l,O2": "mmi42r,O2",
+
+      "mmi32l,O1": "mmi13r,O1",
+      "mmi32l,O2": "mmi23r,O1",
+      "mmi42l,O1": "mmi13r,O2",
+      "mmi42l,O2": "mmi23r,O2",
+
+      "mmi33l,O1": "mmi33r,O1",
+      "mmi33l,O2": "mmi43r,O1",
+      "mmi43l,O1": "mmi33r,O2",
+      "mmi43l,O2": "mmi43r,O2"
+    },
+    "ports": {
+      "I1": "mmi11l,I1",
+      "I2": "mmi21l,I1",
+      "I3": "mmi31l,I1",
+      "I4": "mmi41l,I1",
+
+      "O1": "mmi11r,I1",
+      "O2": "mmi21r,I1",
+      "O3": "mmi31r,I1",
+      "O4": "mmi41r,I1"
+    }
+  },
+  "models": {
+    "mmi": "mmi1x2"
+  }
+}

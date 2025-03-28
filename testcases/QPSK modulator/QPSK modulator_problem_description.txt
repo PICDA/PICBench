@@ -1,0 +1,3 @@
+Problem Description-QPSK modulator:
+
+Design an optical QPSK modulator using single drive Mach-Zehnder Modulators (MZMs) to encode 2 bits per symbol through phase modulation. The circuit should have only one input and one output, and employ the MZMs to modulate the in-phase (I) and quadrature-phase (Q) components of the signal. A 90-degree phase shifter should be used in the path of one of the MZMs, ensuring that the modulation is performed at the correct quadrature points for accurate QPSK encoding. Use the built-in multimode interferometer (MMI) component for splitting and combining the optical signals, and a built-in components called mzm to represent the single drive Mach-Zehnder modulators.

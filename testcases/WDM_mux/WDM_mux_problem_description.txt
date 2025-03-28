@@ -1,0 +1,10 @@
+Problem Description-WDM_multiplexer:
+
+Design an optical WDM multiplexer that combines N channels of optical signals, each at a distinct wavelength, into a single optical fiber for transmission. The multiplexer will utilize a series of built-in add/drop Micro Ring Resonators, each operating at a unique wavelength cwl. The output will be a composite optical signal encompassing all N wavelengths, enabling simultaneous transmission of multiple data channels over a single fiber. The circuit should have N inputs for each input signal and only one output.
+
+Parameters:
+N=4;
+cwl1=1.543;
+cwl2=1.550;
+cwl3=1.554;
+cwl4=1.556;

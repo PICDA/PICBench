@@ -1,0 +1,3 @@
+Problem Description-Optical hybrid:
+
+Design a 90-degree optical hybrid using Multimode Interferometer (MMI) components and coupler components. The optical hybrid should have two optical inputs and four outputs. It is intended to combine the signals from a local oscillator and a received signal for coherent detection. By utilizing built-in Multimode Interferometer (MMI) components and coupler components, the design should mix the input signals to produce the in-phase (I) and quadrature-phase (Q) components, as well as their negative counterparts, enabling effective separation of the amplitude and phase information of the received signal. A phase shifter should be used to achieve the desired phase.

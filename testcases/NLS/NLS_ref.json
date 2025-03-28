@@ -1,0 +1,28 @@
+{
+  "netlist":{
+    "instances": {
+      "coupler1": "coupler",
+      "coupler2": "coupler",
+      "coupler3": "coupler",
+      "phase_shifter": {"component": "straight_heat_metal", "settings": {"phase": 180}}
+    },
+    "connections": {
+      "phase_shifter,O1": "coupler1,I1",
+      "coupler2,O1": "coupler1,I2",
+      "coupler1,O2": "coupler3,I1",
+      "coupler2,O2": "coupler3,I2"
+    },
+    "ports": {
+      "I1":"phase_shifter,I1",
+      "I2":"coupler2,I1",
+      "I3":"coupler2,I2",
+      "O1":"coupler1,O1",
+      "O2":"coupler3,O1",
+      "O3":"coupler3,O2"
+    }
+},
+  "models":{
+    "coupler": "coupler",
+    "straight_heat_metal": "straight_heat_metal"
+  }
+}

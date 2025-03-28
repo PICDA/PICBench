@@ -1,0 +1,3 @@
+Problem Description-OS_2x2:
+
+Design a 2x2 optical switch using built-in coupler components and phase shifters. By incorporating built-in multimode interferometer (MMI) components and 4 adjustable phase shifters, the switch should be able to alternate between the cross and bar states, effectively controlling the switching operation.

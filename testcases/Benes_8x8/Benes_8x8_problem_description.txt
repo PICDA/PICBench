@@ -1,0 +1,5 @@
+Problem Description-Benes_8x8:
+
+Design an NxN optical switching network based on the Benes architecture, ensuring rearrangeably nonblocking switching between N input and N output ports. The network should use (N/2x((log₂(N))−1)) 2x2 optical switching units and consist of (2xlog₂(N))−1) stages, each with N/2 2x2 optical switching units. Use a built-in components called OSU to represent the 2x2 optical switching unit.
+
+ Parameters:N=8

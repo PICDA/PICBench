@@ -1,0 +1,33 @@
+{
+  "netlist":
+{
+  "instances": {
+    "mmi1": "mmi",
+    "mmi2": "mmi",
+    "coupler1": "coupler",
+    "coupler2": "coupler",
+    "phase_shifter": "straight_heat_metal"
+  },
+  "connections": {
+    "mmi1,O1": "coupler1,I1",
+    "mmi1,O2": "coupler2,I1",
+    "mmi2,O1": "coupler1,I2",
+    "mmi2,O2": "phase_shifter,I1",
+    "phase_shifter,O1": "coupler2,I2"
+},
+  "ports": {
+    "I1": "mmi1,I1",
+    "I2": "mmi2,I1",
+    "O1": "coupler1,O1",
+    "O2": "coupler1,O2",
+    "O3": "coupler2,O1",
+    "O4": "coupler2,O2"
+
+  }
+},
+  "models": {
+    "coupler": "coupler",
+    "straight_heat_metal": "straight_heat_metal",
+    "mmi": "mmi1x2"
+  }
+}

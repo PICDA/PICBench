@@ -1,0 +1,28 @@
+{
+  "netlist":
+{
+  "instances": {
+    "mzm_I": "mzm",
+    "mzm_Q": "mzm",
+    "splitter": "mmi",
+    "combiner": "mmi",
+    "phase_shifter": { "component": "straight_heat_metal", "settings": {"phase": 90}}
+  },
+  "connections": {
+    "splitter,O1": "mzm_I,I1",
+    "splitter,O2": "mzm_Q,I1",
+    "mzm_I,O1": "combiner,O1",
+    "mzm_Q,O1": "phase_shifter,I1",
+    "phase_shifter,O1": "combiner,O2"
+},
+  "ports": {
+    "I1": "splitter,I1",
+    "O1": "combiner,I1"
+  }
+},
+  "models": {
+    "mzm": "mzm",
+    "mmi": "mmi1x2",
+    "straight_heat_metal": "straight_heat_metal"
+  }
+}

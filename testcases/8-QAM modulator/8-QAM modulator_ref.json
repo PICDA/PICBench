@@ -1,0 +1,33 @@
+{
+  "netlist":
+{
+  "instances": {
+    "mzm_bit1": "mzm",
+    "mzm_bit2": "mzm",
+    "mzm_bit3": "mzm",
+    "splitter1": "mmi",
+    "splitter2": "mmi",
+    "combiner1": "mmi",
+    "combiner2": "mmi"
+  },
+  "connections": {
+    "splitter1,O1": "splitter2,I1",
+    "splitter2,O1": "mzm_bit1,I1",
+    "splitter2,O2": "mzm_bit2,I1",
+    "splitter1,O2": "mzm_bit3,I1",
+
+    "mzm_bit1,O1": "combiner1,O1",
+    "mzm_bit2,O1": "combiner1,O2",
+    "mzm_bit3,O1": "combiner2,O1",
+    "combiner1,I1": "combiner2,O2"
+},
+  "ports": {
+    "I1": "splitter1,I1",
+    "O1": "combiner2,I1"
+  }
+},
+  "models": {
+    "mzm": "mzm",
+    "mmi": "mmi1x2"
+  }
+}

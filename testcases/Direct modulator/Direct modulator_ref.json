@@ -1,0 +1,20 @@
+{
+  "netlist":
+{
+  "instances": {
+    "mzm_bit": "mzm",
+    "waveguide": "straight"
+  },
+  "connections": {
+    "mzm_bit,O1": "waveguide,I1"
+},
+  "ports": {
+    "I1": "mzm_bit,I1",
+    "O1": "waveguide,O1"
+  }
+},
+  "models": {
+    "mzm": "mzm",
+    "straight": "straight"
+  }
+}

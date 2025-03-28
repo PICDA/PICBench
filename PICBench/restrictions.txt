@@ -1,0 +1,22 @@
+And Here are some restrictions:
+
+1. Each port can only be connected once; duplicate connections to the same port are prohibited.
+2. Connect the ports hierarchically, from the input port stage to the output port stage.
+3. Use "I1", "I2", etc., to name input ports, and "O1", "O2", etc., to name output ports.
+4. Underscores are prohibited in component names.
+5. Only the corresponding json content is required in the result, and notations like ```json``` is prohibited
+6. No comments are allowed in the JSON content.
+
+7. Ensure all "connections" and "ports" are valid and consistent with the defined "instances" and "models". Do not generate invalid or undefined mappings.
+8. In the connections section, only component-specific ports should be used. For example, connections should follow the format mzi1, O1: mzi2, I1, where mzi1, O1 is a port on component mzi1, and mzi2, I1 is a port on component mzi2.
+    -General I/O ports, such as I1, O1, I2, O2, should never appear in the connections section.
+    -The format for all connections must strictly follow: "component_name, port_name": "component_name, port_name". This ensures that only specific ports are used for connecting components.
+9. Final input ports, such as I1 or I2, or output ports, such as O1 or O2, represent the startpoints/endpoints of the system and should not be part of any connections:
+    -These ports should only be defined in the ports section to mark the system's boundaries, indicating where the network terminates.
+    -Final input/output ports should never be involved in internal connections between components.
+Important: Only input/output ports defined in the ports section serve as the boundary, and they do not participate in the component-to-component network connections.14. If a specific mapping or port is not explicitly required by the context, omit it rather than assuming arbitrary port names.
+
+10. If a specific mapping or port is not explicitly required by the context, omit it rather than assuming arbitrary port names.
+11. Only mmi1x2 is provided, and mmi2x1 can be achieved by rotating mmi1x2. When rotating a built-in mmi1x2 (splitter with one input I1 and two outputs O1, O2) to a mmi2x1 configuration (combiner), the port mapping must be updated: the original outputs become inputs, and the original input becomes the output : two inputs: O1, O2 and one output:I1.
+12. When specified the extra built-in components, the model reference in the 'models' section must be the specified components.
+    - For example, when specified a component called 'mzi_ps', 'models' section should be like '... : "mzi_ps"' rather than ' "mzi_ps" : ...'.

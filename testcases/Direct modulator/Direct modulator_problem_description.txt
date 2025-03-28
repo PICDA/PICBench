@@ -1,0 +1,3 @@
+Problem Description-Direct modulator:
+
+Design an optical direct modulator using single drive Mach-Zehnder Modulators (MZMs). The circuit should have only one input and one output, and employ the MZM to modulate the signal. Use a built-in components called mzm to represent the single drive Mach-Zehnder modulators.

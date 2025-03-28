@@ -1,0 +1,118 @@
+{
+  "netlist": {
+    "instances": {
+      "OSU1": "OSU",
+      "OSU2": "OSU",
+      "OSU3": "OSU",
+      "OSU4": "OSU",
+
+      "OSU5": "OSU",
+      "OSU6": "OSU",
+      "OSU7": "OSU",
+
+      "OSU8": "OSU",
+      "OSU9": "OSU",
+      "OSU10": "OSU",
+      "OSU11": "OSU",
+
+      "OSU12": "OSU",
+      "OSU13": "OSU",
+      "OSU14": "OSU",
+
+      "OSU15": "OSU",
+      "OSU16": "OSU",
+      "OSU17": "OSU",
+      "OSU18": "OSU",
+
+      "OSU19": "OSU",
+      "OSU20": "OSU",
+      "OSU21": "OSU",
+
+      "OSU22": "OSU",
+      "OSU23": "OSU",
+      "OSU24": "OSU",
+      "OSU25": "OSU",
+
+      "OSU26": "OSU",
+      "OSU27": "OSU",
+      "OSU28": "OSU"
+    },
+      "connections": {
+        "OSU1,O1": "OSU8,I1",
+        "OSU1,O2": "OSU5,I1",
+        "OSU2,O1": "OSU5,I2",
+        "OSU2,O2": "OSU6,I2",
+        "OSU3,O1": "OSU6,I2",
+        "OSU3,O2": "OSU7,I1",
+        "OSU4,O1": "OSU7,I2",
+        "OSU4,O2": "OSU11,I2",
+
+        "OSU5,O1": "OSU8,I2",
+        "OSU5,O2": "OSU9,I1",
+        "OSU6,O1": "OSU9,I2",
+        "OSU6,O2": "OSU10,I2",
+        "OSU7,O1": "OSU10,I2",
+        "OSU7,O2": "OSU11,I1",
+
+        "OSU8,O1": "OSU15,I1",
+        "OSU8,O2": "OSU12,I1",
+        "OSU9,O1": "OSU12,I2",
+        "OSU9,O2": "OSU13,I2",
+        "OSU10,O1": "OSU13,I2",
+        "OSU10,O2": "OSU14,I1",
+        "OSU11,O1": "OSU14,I2",
+        "OSU11,O2": "OSU18,I2",
+
+        "OSU12,O1": "OSU15,I2",
+        "OSU12,O2": "OSU16,I1",
+        "OSU13,O1": "OSU16,I2",
+        "OSU13,O2": "OSU17,I2",
+        "OSU14,O1": "OSU17,I2",
+        "OSU14,O2": "OSU18,I1",
+
+        "OSU15,O1": "OSU22,I1",
+        "OSU15,O2": "OSU19,I1",
+        "OSU16,O1": "OSU19,I2",
+        "OSU16,O2": "OSU20,I2",
+        "OSU17,O1": "OSU20,I2",
+        "OSU17,O2": "OSU21,I1",
+        "OSU18,O1": "OSU21,I2",
+        "OSU18,O2": "OSU25,I2",
+
+        "OSU19,O1": "OSU22,I2",
+        "OSU19,O2": "OSU23,I1",
+        "OSU20,O1": "OSU23,I2",
+        "OSU20,O2": "OSU24,I2",
+        "OSU21,O1": "OSU24,I2",
+        "OSU21,O2": "OSU25,I1",
+
+        "OSU22,O2": "OSU26,I1",
+        "OSU23,O1": "OSU26,I2",
+        "OSU23,O2": "OSU27,I2",
+        "OSU24,O1": "OSU27,I2",
+        "OSU24,O2": "OSU28,I1",
+        "OSU25,O1": "OSU28,I2"
+      },
+      "ports": {
+        "I1": "OSU1,I1",
+        "I2": "OSU1,I2",
+        "I3": "OSU2,I1",
+        "I4": "OSU2,I2",
+        "I5": "OSU3,I1",
+        "I6": "OSU3,I2",
+        "I7": "OSU4,I1",
+        "I8": "OSU4,I2",
+        "O1": "OSU22,O1",
+        "O2": "OSU26,O1",
+        "O3": "OSU26,O2",
+        "O4": "OSU27,O1",
+        "O5": "OSU27,O2",
+        "O6": "OSU28,O1",
+        "O7": "OSU28,O2",
+        "O8": "OSU25,O2"
+      }
+    },
+    "models": {
+      "OSU": "OSU"
+    }
+  }

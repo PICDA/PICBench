@@ -1,0 +1,38 @@
+{
+  "netlist": {
+    "instances": {
+      "OSU1": "OSU",
+      "OSU2": "OSU",
+      "OSU3": "OSU",
+      "OSU4": "OSU",
+      "OSU5": "OSU",
+      "OSU6": "OSU"
+    },
+      "connections": {
+        "OSU1,O1": "OSU4,I1",
+        "OSU1,O2": "OSU3,I1",
+        "OSU2,O1": "OSU3,I2",
+        "OSU2,O2": "OSU5,I2",
+
+        "OSU3,O1": "OSU4,I2",
+        "OSU3,O2": "OSU5,I1",
+
+        "OSU4,O2": "OSU6,I1",
+        "OSU5,O1": "OSU6,I2"
+      },
+      "ports": {
+        "I1": "OSU1,I1",
+        "I2": "OSU1,I2",
+        "I3": "OSU2,I1",
+        "I4": "OSU2,I2",
+
+        "O1": "OSU4,O1",
+        "O2": "OSU6,O1",
+        "O3": "OSU6,O2",
+        "O4": "OSU5,O2"
+      }
+    },
+    "models": {
+      "OSU": "OSU"
+    }
+  }

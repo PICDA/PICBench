@@ -1,0 +1,25 @@
+{
+  "netlist":{
+    "instances": {
+      "mmi1": "mmi",
+      "waveguide1": {"component": "waveguide", "settings": {"length": 20.0}},
+      "phase_shifter": {"component": "straight_heat_metal", "settings": {"length": 10.0}},
+      "mmi2": "mmi"
+    },
+    "connections": {
+      "mmi1,O1": "phase_shifter,I1",
+      "phase_shifter,O1": "mmi2,O1",
+      "mmi1,O2": "waveguide1,I1",
+      "waveguide1,O1": "mmi2,O2"
+    },
+    "ports": {
+      "I1":"mmi1,I1",
+      "O1":"mmi2,I1"
+    }
+},
+  "models":{
+    "mmi": "mmi1x2",
+    "waveguide": "straight",
+    "straight_heat_metal": "straight_heat_metal"
+  }
+}

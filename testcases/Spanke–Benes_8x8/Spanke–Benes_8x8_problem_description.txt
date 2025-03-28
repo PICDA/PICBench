@@ -1,0 +1,5 @@
+Problem Description-Spanke–Benes_8x8:
+
+Design a NxN optical switching network utilizing the Spanke–Benes architecture, a hybrid that combines elements of both Spanke and Benes networks. The switch should enable rearrangeably nonblocking switching between N input ports and N output ports using 2x2 optical switching units arranged in a N-stage planar network. The number of the 2x2 optical switching units used in each stage is N and N-1 alternately. Use a built-in components called OSU to represent the 2x2 optical switching unit. 
+
+ Parameters:N=8

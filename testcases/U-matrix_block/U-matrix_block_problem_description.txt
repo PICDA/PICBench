@@ -1,0 +1,3 @@
+Problem Description-U-matrix_block:
+
+Design a fundamental block that represents a 2x2 unitary matrix of arbitrary values using integrated photonic components. The block should be built based the built-in coupler component. Each coupler should incorporate adjustable phase shifters to control the interference and routing of optical signals to achieve the desired unitary transformation

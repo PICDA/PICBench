@@ -1,0 +1,5 @@
+Problem Description-Spanke_8x8:
+
+Design an NxN optical switching network based on the Spanke architecture, ensuring strict-sense non-blocking switching between N input and N output ports. The network should use 2N x (N-1) built-in Multimode Interferometer (MMI) components and consist of a combination of N 1xN switches and N Nx1 switches. 
+
+ Parameters:N=8

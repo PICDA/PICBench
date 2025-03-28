@@ -1,0 +1,5 @@
+Problem Description-Clements_8x8:
+
+Design a NxN Mach-Zehnder interferometer (MZI) mesh network utilizing the Clements method. The circuit should utilize Nx(N-1)/2 MZI components arranged in a rectangular network format to from a reconfigurable optical network capable of perfoming any unitary transformation on N input channels. Each MZI should incorporate adjustable phase shifters to control the interference and routing of optical signals within the mesh. Use a built-in components called mzi_ps to represent the MZI block incorporate adjustable phase shifters. 
+
+Parameters:N=8

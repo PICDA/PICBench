@@ -1,0 +1,85 @@
+{
+  "netlist": {
+    "instances": {
+        "OSU1": "osu",
+        "OSU2": "osu",
+        "OSU3": "osu",
+        "OSU4": "osu",
+        "OSU5": "osu",
+        "OSU6": "osu",
+        "OSU7": "osu",
+        "OSU8": "osu",
+        "OSU9": "osu",
+        "OSU10": "osu",
+        "OSU11": "osu",
+        "OSU12": "osu",
+        "OSU13": "osu",
+        "OSU14": "osu",
+        "OSU15": "osu",
+        "OSU16": "osu",
+        "OSU17": "osu",
+        "OSU18": "osu",
+        "OSU19": "osu",
+        "OSU20": "osu"
+    },
+      "connections": {
+        "OSU1,O1": "OSU5,I1",
+        "OSU1,O2": "OSU7,I1",
+        "OSU2,O1": "OSU5,I2",
+        "OSU2,O2": "OSU7,I2",
+        "OSU3,O1": "OSU6,I1",
+        "OSU3,O2": "OSU8,I1",
+        "OSU4,O1": "OSU6,I2",
+        "OSU4,O2": "OSU8,I2",
+
+        "OSU5,O1": "OSU9,I1",
+        "OSU5,O2": "OSU10,I1",
+        "OSU6,O1": "OSU9,I2",
+        "OSU6,O2": "OSU10,I2",
+        "OSU7,O1": "OSU11,I1",
+        "OSU7,O2": "OSU12,I1",
+        "OSU8,O1": "OSU11,I2",
+        "OSU8,O2": "OSU12,I2",
+
+        "OSU9,O1": "OSU13,I1",
+        "OSU9,O2": "OSU14,I1",
+        "OSU10,O1": "OSU13,I2",
+        "OSU10,O2": "OSU14,I2",
+        "OSU11,O1": "OSU15,I1",
+        "OSU11,O2": "OSU16,I1",
+        "OSU12,O1": "OSU15,I2",
+        "OSU12,O2": "OSU16,I2",
+
+        "OSU13,O1": "OSU17,I1",
+        "OSU15,O1": "OSU17,I2",
+        "OSU13,O2": "OSU18,I1",
+        "OSU15,O2": "OSU18,I2",
+        "OSU14,O1": "OSU19,I1",
+        "OSU16,O1": "OSU19,I2",
+        "OSU14,O2": "OSU20,I1",
+        "OSU16,O2": "OSU20,I2"
+      },
+      "ports": {
+        "I1": "OSU1,I1",
+        "I2": "OSU1,I2",
+        "I3": "OSU2,I1",
+        "I4": "OSU2,I2",
+        "I5": "OSU3,I1",
+        "I6": "OSU3,I2",
+        "I7": "OSU4,I1",
+        "I8": "OSU4,I2",
+
+        "O1": "OSU17,O1",
+        "O2": "OSU17,O2",
+        "O3": "OSU18,O1",
+        "O4": "OSU18,O2",
+        "O5": "OSU19,O1",
+        "O6": "OSU19,O2",
+        "O7": "OSU20,O1",
+        "O8": "OSU20,O2"
+      }
+    },
+    "models": {
+      "osu": "OSU"
+    }
+  }

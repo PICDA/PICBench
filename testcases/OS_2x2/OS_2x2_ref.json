@@ -1,0 +1,36 @@
+{
+  "netlist":
+{
+  "instances": {
+    "mmi_lft_1": "mmi",
+    "mmi_lft_2": "mmi",
+    "mmi_rgt_1": "mmi",
+    "mmi_rgt_2": "mmi",
+    "phase_shifter1": "straight_heat_metal",
+    "phase_shifter2": "straight_heat_metal",
+    "phase_shifter3": "straight_heat_metal",
+    "phase_shifter4": "straight_heat_metal"
+  },
+  "connections": {
+    "mmi_lft_1,O1": "phase_shifter1,I1",
+    "phase_shifter1,O1": "mmi_rgt_1,O1",
+    "mmi_lft_1,O2": "phase_shifter2,I1",
+    "phase_shifter2,O1": "mmi_rgt_2,O1",
+    "mmi_lft_2,O1": "phase_shifter3,I1",
+    "phase_shifter3,O1": "mmi_rgt_1,O2",
+    "mmi_lft_2,O2": "phase_shifter4,I1",
+    "phase_shifter4,O1": "mmi_rgt_2,O2"
+
+},
+  "ports": {
+    "I1": "mmi_lft_1,I1",
+    "I2": "mmi_lft_2,I1",
+    "O1": "mmi_rgt_1,I1",
+    "O2": "mmi_rgt_2,I1"
+  }
+},
+  "models": {
+    "mmi": "mmi1x2",
+    "straight_heat_metal": "straight_heat_metal"
+  }
+}

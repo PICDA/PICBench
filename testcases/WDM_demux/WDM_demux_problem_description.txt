@@ -1,0 +1,10 @@
+Problem Description-WDM_demultiplexer:
+
+Design an optical WDM demultiplexer that separates a composite optical signal into N individual wavelength channels for processing and analysis. The multiplexer will utilize a series of built-in add/drop Micro Ring Resonators to efficiently extract N distinct wavelength channels from a single input fiber, corresponding to the wavelengths cwl. The design will ensure precise alignment of the optical paths to effectively isolate and direct each wavelength to its designated output port. The circuit should only have one inputs and one output.
+
+Parameters:
+N=4;
+cwl1=1.543;
+cwl2=1.550;
+cwl3=1.554;
+cwl4=1.556;
